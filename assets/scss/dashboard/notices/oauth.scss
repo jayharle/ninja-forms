@@ -1,0 +1,49 @@
+@keyframes nf-connected {
+   0% {
+      box-shadow: 0 0 2px rgba(255, 255, 255, 0),
+            inset 0 0 2px rgba(255, 255, 255, 0);
+   }
+   50% {
+      box-shadow: 0 0 2px #84cc1e,
+            inset 100vw 0 2px rgba(255, 255, 255, .2);
+   }
+   100% {
+      box-shadow: 0 0 2px rgba(255, 255, 255, 0),
+            inset 100vw 0 2px rgba(255, 255, 255, 0);
+   }
+}
+
+.nf-notices--oauth {
+  margin-top: -40px; // Account for the bottom margin on the topbar.
+  padding-bottom: 20px; // Increase hover target, while maintaining whitespace.
+  text-align:center;
+}
+
+.nf-oauth--checking {
+  padding: 5px;
+}
+
+.nf-oauth--connect {
+  display:block;
+  background-color:#1EA9EA;
+  color:white;
+  padding: 5px;
+  text-decoration:none;
+}
+
+.nf-oauth--connected {
+  color: transparent;
+  padding: 0;
+  line-height: .5;
+  transition: all .4s;
+  background-color:#84CC1E;
+}
+.nf-oauth--connected:not(:hover) {
+  animation: nf-connected 8s ease infinite;
+  animation-delay: 2s;
+}
+.nf-notices--oauth:hover .nf-oauth--connected {
+  color:white;
+  line-height: 2;
+  padding: 5px;
+}

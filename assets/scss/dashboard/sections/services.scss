@@ -1,0 +1,38 @@
+@keyframes nf-service-installing {
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+.dashicons-update-spin {
+  animation: nf-service-installing 1s linear infinite;
+}
+
+.services {
+  .nf-extend.full {
+    flex-basis: 100%;
+  }
+  .nf-extend-buttons a {
+    margin-top: 20px;
+  }
+  .nf-extend-buttons .nf-button {
+    margin-top: auto; // Reset from anchor.
+    margin-bottom: 10px; // Account for toggle.
+  }
+}
+
+.jBox-Confirm-button {
+  height: auto !important;
+  font-size: 17px !important;
+  padding: 10px 30px !important;
+}
+.jBox-Confirm-button-submit {
+  background: #1ea9ea !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
+.jBox-Confirm-button-cancel {
+  background: #fff !important;
+  border: 1px solid #1ea9ea !important;
+  color: #1ea9ea !important;
+}

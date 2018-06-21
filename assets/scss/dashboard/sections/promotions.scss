@@ -1,0 +1,10 @@
+.promotion--wrapper {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+  margin-bottom: 20px; // Maintain whitespace.
+}
+
+.promotion--wrapper a:focus {
+  box-shadow: unset; // Override WP focus state.
+}
